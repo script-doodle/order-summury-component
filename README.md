@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [click here](https://github.com/script-doodle/order-summury-component.git)
+- Solution URL: [click here](https://github.com/script-doodle/order-summary-component.git)
 - Live Site URL: [click here](https://order-summary-component-200125j.netlify.app/)
 
 ## My process
