@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --first-color: hsl(245, 75%, 52%);
+  --first-color-alt: hsl(245, 75%, 65%);
+  --text-color: hsl(224, 23%, 55%);
+  --title-color: hsl(223, 47%, 23%);
+  --container-color: hsl(225, 100%, 98%);
+  --container-color-alt: hsl(225, 100%, 94%);
+
+  --font-normal: 500;
+  --font-bold: 700;
+  --font-bolder: 900;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: var(--font-normal);
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background: url(./images/pattern-background-desktop.svg) no-repeat;
+  background-size: contain;
+  background-color: var(--container-color-alt);
+  color: var(--text-color);
+}
+
+.order__card {
+  width: 28.125rem;
+  background-color: var(--container-color);
+  border-radius: 1.5rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.order__content {
+  display: grid;
+  gap: 1rem;
+  padding: 3rem 2.5rem;
+}
+
+.order__title {
+  font-weight: var(--font-bolder);
+  font-size: 1.75rem;
+  color: var(--title-color);
+}
+
+.order__description {
+  max-width: 30ch;
+  margin-inline: auto;
+}
+
+.order__plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.75rem;
+  background-color: hsl(225, 100%, 97%);
+  border-radius: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.order__item {
+  display: flex;
+  gap: 1rem;
+  align-content: center;
+}
+
+.order__name {
+  color: var(--title-color);
+  font-weight: var(--font-bolder);
+  margin-bottom: 0.25rem;
+}
+
+.order__change {
+  color: var(--first-color);
+  font-weight: var(--font-bold);
+  transition: background 300ms;
+}
+
+.order__change:hover {
+  text-decoration: none;
+  color: var(--first-color-alt);
+}
+
+.order__confirm {
+  background-color: var(--first-color);
+  color: var(--container-color);
+  font-weight: var(--font-bolder);
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  border-radius: 0.65rem;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 16px 30px hsla(0, 0%, 0%, 0.4);
+  transition: background 300ms;
+}
+
+.order__confirm:hover {
+  background-color: var(--first-color-alt);
+}
+
+.order__cancel {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: var(--font-bold);
+  transition: color 300ms;
+}
+
+.order__cancel:hover {
+  color: var(--title-color);
+}
