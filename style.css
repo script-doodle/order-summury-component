@@ -27,8 +27,9 @@ body {
   display: grid;
   place-content: center;
   height: 100vh;
-  background: url(./images/pattern-background-desktop.svg) no-repeat;
-  background-size: contain;
+  background: url(./images/pattern-background-desktop.svg);
+  background-repeat: repeat-x;
+  background-size: 100% 50vmin;
   background-color: var(--container-color-alt);
   color: var(--text-color);
 }
@@ -39,6 +40,11 @@ body {
   border-radius: 1.5rem;
   text-align: center;
   overflow: hidden;
+}
+
+.order__img {
+  max-width: 100%;
+  height: auto;
 }
 
 .order__content {
